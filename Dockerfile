@@ -1,4 +1,3 @@
-USER 10014
 # Use an official Python runtime as a parent image
 FROM python:3.9-slim
 
@@ -12,4 +11,5 @@ COPY . /app
 RUN pip install --no-cache-dir requests
 
 # Define the command to run the Python script
+USER 10014
 CMD ["python", "main.py"]
